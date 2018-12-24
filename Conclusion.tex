@@ -1,0 +1,43 @@
+ \chapter{Conclusion and future work}
+
+
+\begin{ganttchart}[%Specs
+     y unit title=0.5cm,
+     y unit chart=0.7cm,
+     vgrid,hgrid,
+     title height=1,
+%     title/.style={fill=none},
+     title label font=\bfseries\footnotesize, 
+     bar/.style={fill=blue},
+     bar height=0.7,
+%   progress label text={},
+     group right shift=0,
+     group top shift=0.7,
+     group height=.3,
+     group peaks width={0.2},
+     inline]{1}{20}
+    %labels
+    \gantttitle{One and a half years}{20}\\  % title 1
+    \gantttitle[]{2018}{20} \\              
+    \gantttitle{Q1}{5}                      % title 3
+    \gantttitle{Q2}{5}
+    \gantttitle{Q3}{5}
+    \gantttitle{Q4}{5}
+ 
+    \\
+    % Setting group if any
+    %\ganttgroup[inline=false]{Group 1}{1}{5}\\ 
+    \ganttbar[progress=90,inline=false]{\footnotesize 3D measurement methods}{1}{13}\\
+    %\ganttmilestone[inline=false]{Milestone 1}{9} \\
+
+    %\ganttgroup[inline=false]{Group 2}{6}{12} \\ 
+    \ganttbar[progress=80,inline=false]{ \footnotesize Deep learning architecture}{1}{14} \\
+    %\ganttmilestone[inline=false]{Milestone 2}{17} \\
+        \ganttbar[progress=50,inline=false]{\footnotesize Writing Thesis}{13}{18} \\ 
+\end{ganttchart}
+
+
+\addcontentsline{toc}{chapter}{References}
+\renewcommand\bibname{References}
+\bibliography{cm_bib} % bibliography data in report.bi
+

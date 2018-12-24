@@ -1,0 +1,67 @@
+\documentclass[11pt]{report}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+\usepackage{mwe}
+\usepackage{pgfgantt}
+\usepackage{caption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{mathrsfs,amsmath} 
+%% plot
+\usepackage{palatino}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+% 流程图定义基本形状
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width = 2cm, minimum height=1cm,text centered, draw = black, fill = red!40]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=2cm, minimum height=1cm, text centered, draw=black, fill = blue!40]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill = yellow!50]
+\tikzstyle{decision} = [diamond, aspect = 3, text centered, draw=black, fill = green!30]
+% 箭头形式
+\tikzstyle{arrow} = [->,>=stealth]
+\doublespacing
+\pagestyle{fancy}
+\lhead{}
+%\titlehead{\centering\includegraphics[width=6cm]{figures/logo.jpg}}
+\title{\includegraphics[width=0.6\textwidth]{figures/ntu_logo.png}\\ Confirmation Report \\ Smart three-dimensional Machine Vision}
+ \geometry{ 
+ a4paper,
+ total={210mm,297mm},
+ left=30mm,
+ right=25mm,
+ top=25mm,
+ bottom=30mm,
+ }
+
+\author{Advisor: Prof. Anand Asundi\\ \\ Submitted \\by \\HUANG, Chongtian}
+\date{\today}
+\bibliographystyle{mystyle} 
+\begin{document}
+
+\maketitle
+
+%\newpage\null\thispagestyle{empty}\newpage
+\tableofcontents
+%\chapter*{Preface}
+
+\begin{abstract}
+Three-dimensional inspection is increasingly being demanded by industry in various sectors and none more so than in wafer fabs. While there are many three-dimensional surface measuring instruments, there is a still a gap to their adoption in the industry due to lack of methodologies for measuring large objects with micrometer axial resolution and at the same time to zoom into small regions with nanometer resolution. Apart from this, there is also a need to automate the inspection process. In this report, non-interferometric schemes are developed and improved for inspection of specular objects at different scales and a proposal for identifying defects with deep learning over this large field which can then be imaged in three dimensions using other novel systems with higher resolution.
+ ...................................
+\end{abstract}
+\input{Introduction.tex}
+\input{Literature.tex}
+\input{CurrentWork.tex}
+\input{Conclusion.tex}
+
+\end{document}
